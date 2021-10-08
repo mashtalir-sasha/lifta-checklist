@@ -15,3 +15,5 @@ storage/*.key
 Homestead.yaml
 Homestead.json
 /.vagrant
+public/token_file_amoInt.json
+public/cookie.txt
