@@ -1,0 +1,235 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #C4C4C4
+
+body.fancybox-iosfix
+	position: relative !important
+	top: inherit !important
+	left: inherit !important
+	right: inherit !important
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	font-family: $default
+	line-height: 1.2
+	overflow-x: hidden
+
+input, textarea, select
+	border: none
+	outline: none
+
+img
+	display: block
+	max-width: 100%
+	height: auto
+
+h1, h2, h3, h4, h5
+	font-weight: normal
+
+a
+	outline: none
+
+button
+	cursor: pointer
+	outline: none
+	border: none
+	&:focus
+		outline: none
+
+.container
+	position: relative
+	z-index: 1
+	display: flex
+	max-width: 1520px
+	margin: 0 auto
+	align-items: flex-start
+	flex-wrap: wrap
+	&_main
+		margin-top: 190px
+
+.align-items-center
+	align-items: center
+
+.justify-content-between
+	justify-content: space-between
+
+.nav
+	position: relative
+	z-index: 1
+	background-color: rgba(#20003E, .7)
+	padding: 18px 0
+
+.head
+	min-height: 100vh
+	background: linear-gradient(180deg, #421170 0%, #B925FF 54.69%, #421170 100%)
+	overflow: hidden
+	&__bg
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		object-fit: cover
+
+.info
+	max-width: 620px
+
+.wrap
+	width: 100%
+	max-width: 480px
+	position: relative
+	padding: 30px
+	&:before
+		content: ''
+		width: 100%
+		height: 100%
+		background: #20003E
+		opacity: 0.5
+		box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25)
+		border-radius: 20px
+		position: absolute
+		top: 0
+		left: 0
+		z-index: -1
+	&__ttl
+		font-family: $title
+		font-size: 28px
+		text-align: center
+		color: #fff
+		margin-bottom: 30px
+
+.title
+	font-family: $title
+	font-size: 55px
+	color: #fff
+	margin-bottom: 20px
+
+.text
+	font-size: 28px
+	color: #fff
+	margin-bottom: 0
+	& + .text
+		margin-top: 20px
+
+.form
+	&__note
+		color: #fff
+		opacity: .5
+		text-align: center
+		font-size: 18px
+		a
+			color: inherit
+			text-decoration: underline
+
+.rline
+	position: relative
+	width: 100%
+	max-width: 400px
+	margin: 0 auto
+	padding: 20px
+	background-color: #fff
+	display: flex
+	border-radius: 10px
+	overflow: hidden
+	font-family: $title
+	font-size: 18px
+	color: #000
+	margin-bottom: 35px
+	&__note
+		margin-bottom: 0
+		margin-right: 10px
+		line-height: 1
+
+.rfield_error
+	position: absolute
+	font-size: 8px
+	color: red
+	right: 5px
+	bottom: 5px
+	visibility: hidden
+
+.input
+	width: 100%
+
+.btn
+	display: block
+	width: 100%
+	padding: 25px
+	border-radius: 18px
+	border: 2px solid #fff
+	background-color: transparent
+	font-family: $bold
+	font-size: 28px
+	color: #fff
+	text-align: center
+	text-decoration: none
+	text-transform: uppercase
+	transition: all ease .3s
+	margin-bottom: 35px
+	&:hover
+		background-color: #25E9FF
+		border-color: #25E9FF
+		color: #000
+		text-decoration: none
+
+.cprt
+	color: #fff
+	margin-top: -20px
+
+.note
+	width: 100%
+	text-align: center
+	font-family: $title
+	font-size: 150px
+	color: transparent
+	-webkit-text-stroke: 1px #00E3FF
+
+body.fancybox-active header
+	filter: blur(20px)
+
+.fancybox-is-open .fancybox-bg
+	background-color: #7727B7
+	opacity: .5
+
+.thanks_checklist
+	max-width: 480px
+	position: relative
+	border-radius: 20px
+	background-color: transparent
+	&:before
+		content: ''
+		width: 100%
+		height: 100%
+		background-color: #20003E
+		opacity: 0.75
+		box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25)
+		position: absolute
+		top: 0
+		left: 0
+		z-index: -1
+	&__ttl
+		font-family: $title
+		font-size: 48px
+		color: #fff
+		margin-bottom: 35px
+	&__txt
+		font-family: $bold
+		font-size: 24px
+		color: #fff
+		margin-bottom: 35px
+	&__soc
+		font-size: 24px
+		color: #fff
+		margin-bottom: 0
+		a
+			display: block
+			color: #25E9FF
+			text-decoration: underline
+		
+
+@import "media" // Always at the end
